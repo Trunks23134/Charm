@@ -38,7 +38,7 @@ function App() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-400 via-red-400 to-pink-500 flex items-center justify-center relative overflow-hidden">
         <div className="text-center z-10">
-          <img src="/Charm/pio.jpeg" alt="Valentine Photo" className="w-32 h-32 rounded-full object-cover mx-auto animate-pulse" />
+          <img src="/Charm/pio.jpeg" alt="Valentine Photo" className="w-32 h-32 mx-auto animate-pulse" />
           <h1 className="text-8xl font-bold text-white mb-8 animate-bounce">
             Yay!! 🎉
           </h1>
@@ -117,7 +117,7 @@ function App() {
 
         {noAttempts > 0 && (
           <div className="mt-8 flex flex-col items-center">
-            <img src={angryMemes[currentMemeIndex]} alt="Angry Meme" className="w-32 h-32 rounded-lg object-cover mb-4 animate-bounce" />
+            <img src={angryMemes[currentMemeIndex]} alt="Angry Meme" className="w-32 h-32 mb-4 animate-bounce" />
             <p className="text-gray-600 text-lg animate-bounce">
               Please? 🥺 {noAttempts > 3 && "I promise I'll be the best valentine!"}
             </p>
