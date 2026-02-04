@@ -9,9 +9,9 @@ function App() {
   const [currentMemeIndex, setCurrentMemeIndex] = useState(0);
 
   const angryMemes = [
-    '/Charm/public/meow.jpg',
-    '/Charm/public/cat.jpg',
-    '/Charm/public/angry.jpg',
+    'https://www.reddit.com/r/overlord/comments/1go9mo3/does_anyone_else_think_these_two_look_alike/',
+    'https://dk.pinterest.com/pin/cute-angry-cat--80783387061514716/',
+    'https://www.reddit.com/r/aww/comments/rnyhrw/hes_so_mad/',
   ];
 
   const handleYesClick = () => {
@@ -38,7 +38,7 @@ function App() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-400 via-red-400 to-pink-500 flex items-center justify-center relative overflow-hidden">
         <div className="text-center z-10">
-          <img src="/Charm/pio.jpeg" alt="Valentine Photo" className="w-32 h-32 mx-auto animate-pulse" />
+          <img src="https://scontent.fmnl8-5.fna.fbcdn.net/v/t1.6435-9/52482045_10211186713743058_3467321609092595712_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE6Rk4UXqNsGYWghtF7f19bAG9t_xWL_aIAb23_FYv9oq3pQ9vIaMhQylemxLwqizWc45_c5iCGUQW6L5H2sowQ&_nc_ohc=LxG8bPJHEZYQ7kNvwE5WZpt&_nc_oc=Adm-3gSXCH_E46LDlR9DbUw1w7t6mwV6T8yH27mjqLJmJViOOIr0EOPA80sTZZWSCRI&_nc_zt=23&_nc_ht=scontent.fmnl8-5.fna&_nc_gid=2XunOYwGU5lJE3kiMfRZJg&oh=00_Afs1z8A7mgqNeD9AdWF8A-nSCvv4h8IZtscWqqMB8U3vzw&oe=69AB3CE2" alt="Valentine Photo" className="w-32 h-32 mx-auto animate-pulse" />
           <h1 className="text-8xl font-bold text-white mb-8 animate-bounce">
             Yay!! 🎉
           </h1>
