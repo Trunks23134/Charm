@@ -9,9 +9,9 @@ function App() {
   const [currentMemeIndex, setCurrentMemeIndex] = useState(0);
 
   const angryMemes = [
-    '/Charm/meow.jpg',
-    '/Charm/cat.jpg',
-    '/Charm/angry.jpg',
+    '/Charm/public/meow.jpg',
+    '/Charm/public/cat.jpg',
+    '/Charm/public/angry.jpg',
   ];
 
   const handleYesClick = () => {
