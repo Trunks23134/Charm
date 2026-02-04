@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+@keyframes firework {
+  0% {
+    transform: translate(0, 0) scale(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float linear infinite;
+}
+
+.fireworks-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.firework {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: firework 2s ease-out infinite;
+}
+
+.firework::before,
+.firework::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.firework:nth-child(1) { background: #ff0080; --tx: 100px; --ty: -150px; }
+.firework:nth-child(2) { background: #00ff80; --tx: -100px; --ty: -150px; }
+.firework:nth-child(3) { background: #0080ff; --tx: 150px; --ty: 100px; }
+.firework:nth-child(4) { background: #ff8000; --tx: -150px; --ty: 100px; }
+.firework:nth-child(5) { background: #ff0080; --tx: 0px; --ty: -200px; }
+.firework:nth-child(6) { background: #00ff80; --tx: 200px; --ty: 0px; }
+.firework:nth-child(7) { background: #0080ff; --tx: -200px; --ty: 0px; }
+.firework:nth-child(8) { background: #ff8000; --tx: 100px; --ty: -100px; }
+.firework:nth-child(9) { background: #ff0080; --tx: -100px; --ty: -100px; }
+.firework:nth-child(10) { background: #00ff80; --tx: 120px; --ty: 120px; }
+.firework:nth-child(11) { background: #0080ff; --tx: -120px; --ty: 120px; }
+.firework:nth-child(12) { background: #ff8000; --tx: 80px; --ty: -180px; }
+.firework:nth-child(13) { background: #ff0080; --tx: -80px; --ty: -180px; }
+.firework:nth-child(14) { background: #00ff80; --tx: 180px; --ty: 80px; }
+.firework:nth-child(15) { background: #0080ff; --tx: -180px; --ty: 80px; }
+.firework:nth-child(16) { background: #ff8000; --tx: 140px; --ty: -140px; }
+.firework:nth-child(17) { background: #ff0080; --tx: -140px; --ty: -140px; }
+.firework:nth-child(18) { background: #00ff80; --tx: 160px; --ty: 40px; }
+.firework:nth-child(19) { background: #0080ff; --tx: -160px; --ty: 40px; }
+.firework:nth-child(20) { background: #ff8000; --tx: 0px; --ty: 200px; }
